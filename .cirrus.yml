@@ -34,3 +34,7 @@ docker_builder:
       # - INSTANCE: default-opensuse-leap-42-2017-7-py2
   bundle_install_script: bundle install
   verify_script: bundle exec kitchen verify $INSTANCE
+  bundle_cache:
+    folder: /usr/local/bundle
+    fingerprint_script: echo $RUBY_VERSION && cat Gemfile
+    populate_script: bundle install

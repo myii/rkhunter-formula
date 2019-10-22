@@ -23,8 +23,8 @@ jobs:
       name: 'Lint: salt-lint, yamllint & commitlint'
       before_install: skip
       script:
-        # Install and run `salt-lint`
-        - pip install --user salt-lint
+        # Install and run `salt-lint` (release candidate `v0.1.0`)
+        - pip install --user https://github.com/myii/salt-lint/archive/71_0.zip
         - git ls-files | grep '\.sls$\|\.jinja$\|\.j2$\|\.tmpl$'
                        | xargs -I {} salt-lint {}
         # Install and run `yamllint`

@@ -21,42 +21,7 @@ jobs:
     - env: Lint_rubocop
   fast_finish: true
   include:
-    ## Define the test stage that runs the linters (and testing matrix, if applicable)
-
-    # Run all of the linters in a single job (except `rubocop`)
-    - language: 'node_js'
-      node_js: 'lts/*'
-      env: 'Lint'
-      name: 'Lint: salt-lint, yamllint, shellcheck & commitlint'
-      before_install: 'skip'
-      script:
-        # Install and run `salt-lint`
-        - pip install --user salt-lint
-        - git ls-files -- '*.sls' '*.jinja' '*.j2' '*.tmpl' '*.tst'
-                        | xargs salt-lint
-        # Install and run `yamllint`
-        # Need at least `v1.17.0` for the `yaml-files` setting
-        - pip install --user yamllint>=1.17.0
-        - yamllint -s .
-        # Run `shellcheck` (already pre-installed in Travis)
-        - shellcheck --version
-        - git ls-files -- '*.sh' '*.bash' '*.ksh'
-                        | xargs shellcheck
-        # Install and run `commitlint`
-        - npm i -D @commitlint/config-conventional
-                   @commitlint/travis-cli
-        - commitlint-travis
-    # Run the `rubocop` linter in a separate job that is allowed to fail
-    # Once these lint errors are fixed, this can be merged into a single job
-    - language: node_js
-      node_js: lts/*
-      env: Lint_rubocop
-      name: 'Lint: rubocop'
-      before_install: skip
-      script:
-        # Install and run `rubocop`
-        - gem install rubocop
-        - rubocop -d
+    ## Define the test stage that runs the linters (and testing matrix, if applicable) #}
 
     ## Define the release stage that runs `semantic-release`
     - stage: 'release'

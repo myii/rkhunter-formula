@@ -1,0 +1,221 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/rkhunter-formula/compare/v0.4.2...v0.4.3++[0.4.3^] (2020-12-16)
+
+=== Bug Fixes
+
+* *libtofs:* “files_switch” mess up the variable exported by “map.jinja”
+ [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/cfdbc7767fee822963557271e49935640e29032d[cfdbc77^])
+* *release.config.js:* use full commit hash in commit link [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/81f9aa6a37cd91542a2e09d511aa9f7debcf846f[81f9aa6^])
+
+=== Continuous Integration
+
+* *gemfile:* restrict `train` gem version until upstream fix [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/7125a74612f76de3c9eef2e4e6873e70cf45d119[7125a74^])
+* *gemfile.lock:* add to repo with updated `Gemfile` [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/6efd384e0f3ca688ad3e8c69629ba9efc6d80cd6[6efd384^])
+* *gitlab-ci:* use GitLab CI as Travis CI replacement
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/c6084038631ad07bedc07b6d6bff5c1010fee746[c608403^])
+* *kitchen:* avoid using bootstrap for `master` instances [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/801c48d5878112afdf10c98e519b9c6df479b005[801c48d^])
+* *kitchen:* change `log_level` to `debug` instead of `info`
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/26963cd9e23423ffc0d9d3a7a73c34157d107144[26963cd^])
+* *kitchen:* install required packages to bootstrapped `opensuse` [skip
+ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/baf39bce7621536a733da5c9ede5da79713e5fd4[baf39bc^])
+* *kitchen:* use `debian-10-master-py3` instead of `develop` [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/a446d89247e8b89e0471c05f55b7864cc32fce7f[a446d89^])
+* *kitchen:* use `develop` image until `master` is ready (`amazonlinux`)
+ [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/019df4ca6cdfe52f93438b768649163d0991af35[019df4c^])
+* *kitchen:* use `saltimages` Docker Hub where available [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/13ea1f3a5147d0f64c18028841607730058f5057[13ea1f3^])
+* *kitchen:* use bootstrapped `opensuse` images until `2019.2.2` [skip
+ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/75f8db2068f9543d3bf792a937ea8ae332ad2347[75f8db2^])
+* *kitchen+travis:* remove `master-py2-arch-base-latest` [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/0397b55d6a1781adeda6a7deaba8869adcdbc750[0397b55^])
+* *kitchen+travis:* replace EOL pre-salted images
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/a15ffb85a336ea4ee87e6c7b53b90ad1a2c08120[a15ffb8^])
+* *kitchen+travis:* upgrade matrix after `2019.2.2` release [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/80dbc599370149425069350226d29e612ea563d6[80dbc59^])
+* *platform:* add `arch-base-latest` (commented out for now) [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/0e9e0c851bb841488c957b37139e3b8aeba02827[0e9e0c8^])
+* *pre-commit:* add to formula [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/3c78d1b9ef606caf21558c7cfe48a52ab2247419[3c78d1b^])
+* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/391ead57e7d1d262b741bc0bd84d41108c13de37[391ead5^])
+* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/d5d59462213ed02819b21e09937c5e306f055512[d5d5946^])
+* *travis:* add notifications => zulip [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/1523715202140d6bb793bbef6e8c856e1a803f81[1523715^])
+* *travis:* apply changes from build config validation [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/df299f646b46ab68745beb8ad63e2c3097c5fed0[df299f6^])
+* *travis:* opt-in to `dpl v2` to complete build config validation [skip
+ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/4f61ce4402a5bc7a0ac991eb10a3300fa4f65253[4f61ce4^])
+* *travis:* quote pathspecs used with `git ls-files` [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/6f6af16de5080a2f020f3ce6b68ec13a828ff5c0[6f6af16^])
+* *travis:* run `shellcheck` during lint job [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/88ddf899b650b92f4315da563ba381f8b70aa704[88ddf89^])
+* *travis:* update `salt-lint` config for `v0.0.10` [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/cbd932393c9032f943cd333fbe58006c5bf34e39[cbd9323^])
+* *travis:* use `major.minor` for `semantic-release` version [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/40f2e2d778c7afa6995d3733c56bb05c9c50453b[40f2e2d^])
+* *travis:* use build config validation (beta) [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/883ac7e606c90bbcb3d3e890d97708ae5a1b5517[883ac7e^])
+* *workflows/commitlint:* add to repo [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/f15cbf116756b1e194a337622039f7e143b584ec[f15cbf1^])
+* merge travis matrix, add `salt-lint` & `rubocop` to `lint` job
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/4acd0ee945eccc75c3e1809f268ede86ecc47f01[4acd0ee^])
+* *yamllint:* add rule `empty-values` & use new `yaml-files` setting
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/b8d047de34701abdda7ebdadda5c85a0d1dd0d52[b8d047d^])
+* use `dist: bionic` & apply `opensuse-leap-15` SCP error workaround
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/fecb8ea5d86a88af432375304831f2e4fa1e71c0[fecb8ea^])
+
+=== Documentation
+
+* *contributing:* remove to use org-level file instead [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/0b8c1faa57d50a887002e890eb118f29db9f3ddf[0b8c1fa^])
+* *readme:* update link to `CONTRIBUTING` [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/323a72243c951fa3ed9f1f9e33ad7b2bafe72f44[323a722^])
+
+=== Performance Improvements
+
+* *travis:* improve `salt-lint` invocation [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/0ff4798806fdab60375a7b05aa1427c0f191b35e[0ff4798^])
+
+=== Styles
+
+* *libtofs.jinja:* use Black-inspired Jinja formatting [skip ci]
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/bb3a0452c35d10671857f922807012a37cd92d27[bb3a045^])
+
+== link:++https://github.com/saltstack-formulas/rkhunter-formula/compare/v0.4.1...v0.4.2++[0.4.2^] (2019-08-27)
+
+=== Code Refactoring
+
+* *pillar:* sync map.jinja with template-formula
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/0c51bce[0c51bce^])
+
+== link:++https://github.com/saltstack-formulas/rkhunter-formula/compare/v0.4.0...v0.4.1++[0.4.1^] (2019-08-25)
+
+=== Documentation
+
+* *readme:* update testing section
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/ef33193[ef33193^])
+
+== link:++https://github.com/saltstack-formulas/rkhunter-formula/compare/v0.3.0...v0.4.0++[0.4.0^] (2019-08-17)
+
+=== Continuous Integration
+
+* *cirrus:* reduce matrix down to 6 instances
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/ad6d445[ad6d445^])
+* *kitchen+cirrus:* modify matrix to include `develop` platform
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/ed9063b[ed9063b^])
+
+=== Features
+
+* *yamllint:* include for this repo and apply rules throughout
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/1e25f57[1e25f57^])
+
+== link:++https://github.com/saltstack-formulas/rkhunter-formula/compare/v0.2.0...v0.3.0++[0.3.0^] (2019-05-28)
+
+=== Continuous Integration
+
+* *cirrus:* use cirrus-ci alongisde travis-ci
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/e3e75f5[e3e75f5^])
+
+=== Documentation
+
+* *readme:* add testing requirements section
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/20155bb[20155bb^])
+
+=== Features
+
+* *kitchen:* add bin/kitchen binstub to ease calls to kitchen
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/9da2a8c[9da2a8c^])
+
+== link:++https://github.com/saltstack-formulas/rkhunter-formula/compare/v0.1.4...v0.2.0++[0.2.0^] (2019-05-16)
+
+=== Bug Fixes
+
+* *formula:* fix list of compatible OS
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/7a96f29[7a96f29^])
+
+=== Continuous Integration
+
+* *kitchen+inspec:* provide platform specific pillars
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/2f5c0a5[2f5c0a5^])
+
+=== Features
+
+* *pillar:* use config.get instead of pillar.get
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/b23b448[b23b448^])
+
+== link:++https://github.com/saltstack-formulas/rkhunter-formula/compare/v0.1.3...v0.1.4++[0.1.4^] (2019-05-13)
+
+=== Bug Fixes
+
+* *formula:* add only supported distros to FORMULA file
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/9fbc9ec[9fbc9ec^])
+* *gitignore:* update .gitignore from template-formula
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/90b261c[90b261c^])
+
+=== Documentation
+
+* *readme:* fix testing section indentation
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/bf7de8d[bf7de8d^])
+* *readme:* update readme with testing info
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/773d23e[773d23e^])
+
+== link:++https://github.com/saltstack-formulas/rkhunter-formula/compare/v0.1.2...v0.1.3++[0.1.3^] (2019-05-13)
+
+=== Code Refactoring
+
+* *inspec:* use `os:family` simplification for `config_spec`
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/7aa9b7b[7aa9b7b^])
+* *osfamilymap:* remove quotes around paths for consistency
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/d763120[d763120^])
+* *yaml:* move shared values to `defaults.yaml`
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/034f5a0[034f5a0^])
+* *yaml:* sort `default` and `config` alphabetically
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/140007d[140007d^])
+
+== link:++https://github.com/saltstack-formulas/rkhunter-formula/compare/v0.1.1...v0.1.2++[0.1.2^] (2019-05-13)
+
+=== Code Refactoring
+
+* *pillar:* add default pillars for each OS family
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/7dd3e18[7dd3e18^])
+
+=== Continuous Integration
+
+* *inspec:* improve inspec.yml
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/d898f10[d898f10^])
+* *kitchen:* rename Inspec profile to default
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/22c9084[22c9084^])
+* *kitchen:* test with CentOS 6
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/19271a1[19271a1^])
+* *kitchen+travis:* use latest pre-salted images
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/10fe96b[10fe96b^])
+
+=== Documentation
+
+* *license:* update license to Apache 2.0
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/5b7af27[5b7af27^])
+
+=== Tests
+
+* *inspec:* be sure to run tests on Ubuntu and OpenSuse
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/3641baf[3641baf^])
+
+== link:++https://github.com/saltstack-formulas/rkhunter-formula/compare/v0.1.0...v0.1.1++[0.1.1^] (2019-05-02)
+
+=== Documentation
+
+* *semantic-release:* implement an automated changelog
+(https://github.com/saltstack-formulas/rkhunter-formula/commit/faa4a67[faa4a67^])
